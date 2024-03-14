@@ -12,7 +12,7 @@ const App = () => {
 
                 <Bio />
                 <Gallery />
-                {/*<WeatherForecast />*/}
+                <WeatherForecast />
             </div>
         </>
     return (

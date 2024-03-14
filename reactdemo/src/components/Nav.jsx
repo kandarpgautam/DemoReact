@@ -1,4 +1,5 @@
 import instagramLogo from '../assets/instagram.png'; 
+import ThemeToggle from './ThemeToggle'; 
 
 const Nav = () => {
     const contents =
@@ -21,7 +22,7 @@ const Nav = () => {
                     <i className="fas fa-heart" />
                 </button>
             </span>
-
+            <ThemeToggle />
         </nav>
     return (contents);
 }

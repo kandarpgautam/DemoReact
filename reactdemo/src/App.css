@@ -7,16 +7,6 @@ tr:nth-child(odd) {
     background: #FFF;
 }
 
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-body {
-    background-color: #fafafa;
-    margin: 0;
-}
-
 button {
     cursor: pointer;
     padding: unset;
@@ -30,7 +20,8 @@ nav {
     position: fixed;
     display: grid;
     top: 0;
-    background-color: #fff;
+    background-color: white;
+    color:black;
     height: 3.3em;
     line-height: 3.3em;
     width: 100%;
@@ -75,7 +66,7 @@ nav {
 }
 
 .bio {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 2fr;
     font-family: Arial, Helvetica, sans-serif;
     padding: 3em 0 2em 5em;
@@ -113,19 +104,21 @@ nav {
     cursor: pointer;
 }
 
-    .profile-photo img:hover {
-        opacity: 0.7;
-    }
+.profile-photo img:hover {
+    opacity: 0.7;
+}
+
+.profile-info{
+    margin-left: 2em;
+}
 
 .profile-info .name {
     font-size: 1.7em;
-    color: #545454;
     margin-bottom: 0;
 }
 
 .profile-info .about {
     font-size: 1.2em;
-    color: #545454;
 }
 
 .profile-info button {
@@ -136,9 +129,9 @@ nav {
     height: 2em;
 }
 
-    .profile-info button:hover {
-        background-color: #0081d6;
-    }
+.profile-info button:hover {
+    background-color: #0081d6;
+}
 
 .edit-bio-form input {
     width: 50%;
@@ -170,21 +163,24 @@ nav {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin:10px;
+    display: flex;
     row-gap: 1.7em;
     column-gap: 1em;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .item {
-    height: 17.5em;
-    width: 17.5em;
+    height: 300px;
+    width:  300px;
     background: #000;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .item-image {
-    height: 100%;
     width: 100%;
     object-fit: cover;
 }

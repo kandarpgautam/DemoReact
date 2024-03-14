@@ -10,7 +10,7 @@ const Gallery = () => {
         <>
             <input type="file" name="photo" id="addPhotoInput" />
             <label htmlFor="addPhotoInput">
-                <i className="addPhotoButton fas fa-plus-square" ></i>
+                <i className="addPhotoButton fas fa-plus-square fa-3x" ></i>
             </label>
             <section className="gallery">
                 <div className="item">
@@ -26,11 +26,11 @@ const Gallery = () => {
                     <button className="delete-button">Delete</button>
                 </div>
                 <div className="item">
-                    <img src={pexels4} className="item-image" alt="gallery pic" />
+                    <img src={pexels5} className="item-image" alt="gallery pic" />
                     <button className="delete-button">Delete</button>
                 </div>
                 <div className="item">
-                    <img src={pexels5} className="item-image" alt="gallery pic" />
+                    <img src={pexels4} className="item-image" alt="gallery pic" />
                     <button className="delete-button">Delete</button>
                 </div>
             </section>
